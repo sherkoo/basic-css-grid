@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+.clearfix{
+  *zoom: 1;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+.clearfix:after,
+.clearfix:before{
+  display: table;
+  content: "";
+}
+
 .col-100{
   width: 100%;
 }
