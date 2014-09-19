@@ -131,80 +131,80 @@ Media Queries
 
 @media all and (max-width: 768px) and (min-width: 0px){
 
-.col-90{
-  width: 100%;
-  float: left;
-}
+  .col-90{
+    width: 100%;
+    float: left;
+  }
 
-.col-85{
-  width: 100%;
-  float: left;
-}
+  .col-85{
+    width: 100%;
+    float: left;
+  }
 
-.col-80{
-  width: 100%;
-  float: left;
-}
+  .col-80{
+    width: 100%;
+    float: left;
+  }
 
-.col-75{
-  width: 100%;
-  float: left;
-}
+  .col-75{
+    width: 100%;
+    float: left;
+  }
 
-.col-70{
-  width: 100%;
-  float: left;
-}
+  .col-70{
+    width: 100%;
+    float: left;
+  }
 
-.col-60{
-  width: 100%;
-  float: left;
-}
+  .col-60{
+    width: 100%;
+    float: left;
+  }
 
-.col-50{
-  width: 100%;
-  float: left;
-}
+  .col-50{
+    width: 100%;
+    float: left;
+  }
 
-.col-40{
-  width: 100%;
-  float: left;
-}
+  .col-40{
+    width: 100%;
+    float: left;
+  }
 
-.col-42-5{
-  width: 42100%;
-  float: left;
-}
+  .col-42-5{
+    width: 42100%;
+    float: left;
+  }
 
-.col-33{
-  width: 100%;
-  float: left;
-}
+  .col-33{
+    width: 100%;
+    float: left;
+  }
 
-.col-30{
-  width: 100%;
-  float: left;
-}
+  .col-30{
+    width: 100%;
+    float: left;
+  }
 
-.col-25{
-  width: 100%;
-  float: left;
-}
+  .col-25{
+    width: 100%;
+    float: left;
+  }
 
-.col-20{
-  width: 100%;
-  float: left;
-}
+  .col-20{
+    width: 100%;
+    float: left;
+  }
 
-.col-15{
-  width: 100%;
-  float: left;
-}
+  .col-15{
+    width: 100%;
+    float: left;
+  }
 
-.col-10{
-  width: 100%;
-  float: left;
-}
+  .col-10{
+    width: 100%;
+    float: left;
+  }
 
 }
 
