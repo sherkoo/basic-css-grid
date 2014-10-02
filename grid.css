@@ -32,6 +32,25 @@ Basic CSS Grid
   content: "";
 }
 
+.col-100,
+.col-90,
+.col-85,
+.col-80,
+.col-75,
+.col-70,
+.col-60,
+.col-50,
+.col-40,
+.col-42-5,
+.col-33,
+.col-30,
+.col-25,
+.col-20,
+.col-15,
+.col-10{
+  padding: 0 5px;
+}
+
 .col-100{
   width: 100%;
 }
