@@ -1,7 +1,8 @@
-basiccssgrid
+Basic Css Grid
 ============
 
-Basic CSS grid
+Instructions
+---
 
 ```HTML
 <div class="col-100"></div>
