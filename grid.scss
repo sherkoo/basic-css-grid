@@ -28,7 +28,7 @@
 $grid-container-width: 1200px;
 
 $grid-col-margin: 1.5em;
-$grid-col-gutter: 1.5em / 2;
+$grid-col-gutter: $grid-col-margin / 2;
 
 $grid-breakpoint-1: 800px;
 $grid-breakpoint-2: 400px;
@@ -83,8 +83,8 @@ $grid-breakpoint-2: 400px;
  */
 
 .container-full{
-  padding: 0 10px;
   width: 100%;
+  margin-bottom: $grid-col-margin;
 }
 
 /**
@@ -141,7 +141,7 @@ $grid-breakpoint-2: 400px;
 
 /**
  * Helper columns
- * -------------------------
+ * --------------
  * 1. Percent based by class name
  * 2. Center columns
  */
@@ -172,7 +172,7 @@ $grid-breakpoint-2: 400px;
 
 /* Center column */
 .col-center{
-  margin: 0 auto;
+  margin: 0 auto $grid-col-margin auto;
   float: none;
 }
 
