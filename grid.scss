@@ -101,7 +101,8 @@ $grid-breakpoint-2: 400px;
 }
 
 /* Global styling for columns */
-[class*='col-']{
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-10, .col-20, .col-25, .col-40, .col-60, .col-75,{
   float: left;
   min-height: 1px;
   padding: 0 $grid-col-gutter;
