@@ -170,26 +170,101 @@ $grid-breakpoint-2: 400px;
  */
 
 @media all and (max-width: $grid-breakpoint-1){
-  .col-1{
+  .col-md-10{
+    width: 10%;
+  }
+
+  .col-md-20{
+    width: 20%;
+  }
+
+  .col-md-25{
+    width: 25%;
+  }
+
+  .col-md-40{
+    width: 40%;
+  }
+
+  .col-md-60{
+    width: 60%;
+  }
+
+  .col-md-75{
+    width: 75%;
+  }
+
+  .col-md-1{
+    width: 16.66%;
+  }
+
+  .col-md-2{
+    width: 33.33%;
+  }
+
+  .col-md-3{
     width: 50%;
   }
 
-  /* Make any col 100% */
-  [class*='col-'].full{
-    width: 100%;
+  .col-md-4{
+    width: 66.66%;
   }
 
-  .col-6, .col-5, .col-4, .col-20{
+  .col-md-5{
+    width: 83.33%;
+  }
+
+  .col-md-6{
     width: 100%;
   }
 }
 
 @media all and (max-width: $grid-breakpoint-2){
-  .col-6, .col-5, .col-3, .col-2, .col-25, .col-4, .col-20{
-    width: 100%;
+  .col-sm-10{
+    width: 10%;
   }
 
-  .col-1{
+  .col-sm-20{
+    width: 20%;
+  }
+
+  .col-sm-25{
+    width: 25%;
+  }
+
+  .col-sm-40{
+    width: 40%;
+  }
+
+  .col-sm-60{
+    width: 60%;
+  }
+
+  .col-sm-75{
+    width: 75%;
+  }
+
+  .col-sm-1{
+    width: 16.66%;
+  }
+
+  .col-sm-2{
+    width: 33.33%;
+  }
+
+  .col-sm-3{
     width: 50%;
+  }
+
+  .col-sm-4{
+    width: 66.66%;
+  }
+
+  .col-sm-5{
+    width: 83.33%;
+  }
+
+  .col-sm-6{
+    width: 100%;
   }
 }
