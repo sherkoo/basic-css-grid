@@ -1,0 +1,195 @@
+/**
+ * Basic CSS Grid
+ * --------------
+ * CONTENTS:
+ * INTRODUCTION.........How the grid system works.
+ * VARIABLES............Your settings.
+ * CONTAINER............Build the grid structure.
+ * COLUMNS..............Build our responsive widths around our breakpoints.
+ */
+
+/**
+ * Introduction
+ * ------------
+ * Basic CSS Grid was designed to be very light weight while
+ * also providing the tools to build a grid.
+ */
+
+/**
+ * Variables
+ * ---------
+ * 1. Options to set container width
+ * 2. Options for gutter width
+ * 3. Options for bottom margin
+ * 4. Breakpoints
+ */
+
+$grid-container-width: 1200px;
+
+$grid-col-margin: 24px;
+$grid-col-gutter: 24px / 2;
+
+$grid-breakpoint-1: 800px;
+$grid-breakpoint-2: 400px;
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * Container
+ * ---------
+ * 1. Wrapper around rows
+ * 2. Set width of wrapper
+ */
+
+.container{
+  width: 100%;
+  max-width: $grid-container-width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/**
+ * Row
+ * ---
+ * 1. Allows row to clear
+ * 2. Used inside of .container
+ */
+
+.row{
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after{
+  clear: both;
+}
+
+/**
+ * Container-full
+ * --------------
+ * 1. Allows row to span entire width of browser
+ * 2. Use in place of .container
+ */
+
+.container-full{
+  padding: 0 10px;
+  width: 100%;
+}
+
+/**
+ * Columns
+ * -------
+ * 1. Set percent based widths
+ * 2. Used in between .row
+ * 3. Should equal 100% - i.e. col-90 + col-10 = 100%
+ */
+
+/* Make columns nestable */
+[class*='col-'].nest{
+  padding: 0;
+}
+
+/* Global styling for columns */
+[class*='col-']{
+  float: left;
+  min-height: 1px;
+  padding: 0 $grid-col-gutter;
+  margin-bottom: $grid-col-margin;
+}
+
+/* Class number correlates to percent */
+.col-10{
+  width: 10%;
+}
+
+.col-20{
+  width: 20%;
+}
+
+.col-25{
+  width: 25%;
+}
+
+.col-40{
+  width: 40%;
+}
+
+.col-60{
+  width: 60%;
+}
+
+.col-75{
+  width: 75%;
+}
+
+/**
+ * Set column widths by name
+ * -------------------------
+ * 1. Contains 6 max
+ * 2. Easier to design with
+ * 3. 100 / 6(cols) = 16.66666666, 100 - 16.6666666 = 83.33 etc
+ */
+
+.col-1{
+  width: 16.66%;
+}
+
+.col-2{
+  width: 33.33%;
+}
+
+.col-3{
+  width: 50%;
+}
+
+.col-4{
+  width: 66.66%;
+}
+
+.col-5{
+  width: 83.33%;
+}
+
+.col-6{
+  width: 100%;
+}
+
+/**
+ * Responsive
+ * ----------
+ * 1. Control breakpoints
+ */
+
+@media all and (max-width: $grid-breakpoint-1){
+  .col-1{
+    width: 50%;
+  }
+
+  /* Make any col 100% */
+  [class*='col-'].full{
+    width: 100%;
+  }
+
+  .col-6, .col-5, .col-4, .col-20{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: $grid-breakpoint-2){
+  .col-6, .col-5, .col-3, .col-2, .col-25, .col-4, .col-20{
+    width: 100%;
+  }
+
+  .col-1{
+    width: 50%;
+  }
+}
