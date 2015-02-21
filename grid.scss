@@ -143,6 +143,7 @@ $grid-breakpoint-2: 400px;
  * Helper columns
  * -------------------------
  * 1. Percent based by class name
+ * 2. Center columns
  */
 
 .col-10{
@@ -167,6 +168,12 @@ $grid-breakpoint-2: 400px;
 
 .col-75{
   width: 75%;
+}
+
+/* Center column */
+.col-center{
+  margin: 0 auto;
+  float: none;
 }
 
 /**
