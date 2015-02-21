@@ -12,7 +12,8 @@
  * Introduction
  * ------------
  * Basic CSS Grid was designed to be very light weight while
- * also providing the tools to build a grid.
+ * also providing the tools to build a grid. Built on a 6 column
+ * layout, it also provides helper col classes with percents.
  */
 
 /**
@@ -26,12 +27,13 @@
 
 $grid-container-width: 1200px;
 
-$grid-col-margin: 24px;
-$grid-col-gutter: 24px / 2;
+$grid-col-margin: 1.5em;
+$grid-col-gutter: 1.5em / 2;
 
 $grid-breakpoint-1: 800px;
 $grid-breakpoint-2: 400px;
 
+/* Setup */
 *{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -106,37 +108,11 @@ $grid-breakpoint-2: 400px;
   margin-bottom: $grid-col-margin;
 }
 
-/* Class number correlates to percent */
-.col-10{
-  width: 10%;
-}
-
-.col-20{
-  width: 20%;
-}
-
-.col-25{
-  width: 25%;
-}
-
-.col-40{
-  width: 40%;
-}
-
-.col-60{
-  width: 60%;
-}
-
-.col-75{
-  width: 75%;
-}
-
 /**
  * Set column widths by name
  * -------------------------
- * 1. Contains 6 max
- * 2. Easier to design with
- * 3. 100 / 6(cols) = 16.66666666, 100 - 16.6666666 = 83.33 etc
+ * 1. Contains 6 column
+ * 2. 100 / 6(cols) = 16.66666666, 100 - 16.6666666 = 83.33 etc
  */
 
 .col-1{
@@ -161,6 +137,36 @@ $grid-breakpoint-2: 400px;
 
 .col-6{
   width: 100%;
+}
+
+/**
+ * Helper columns
+ * -------------------------
+ * 1. Percent based by class name
+ */
+
+.col-10{
+  width: 10%;
+}
+
+.col-20{
+  width: 20%;
+}
+
+.col-25{
+  width: 25%;
+}
+
+.col-40{
+  width: 40%;
+}
+
+.col-60{
+  width: 60%;
+}
+
+.col-75{
+  width: 75%;
 }
 
 /**
