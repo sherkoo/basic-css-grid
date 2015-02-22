@@ -171,6 +171,7 @@ $grid-breakpoint-2: 400px;
   width: 75%;
 }
 
+
 /* Center column */
 .col-center{
   margin: 0 auto $grid-col-margin auto;
@@ -233,6 +234,10 @@ $grid-breakpoint-2: 400px;
   .col-md-6{
     width: 100%;
   }
+
+  .col-md-hide{
+    display: none;
+  }
 }
 
 /* Determine how things will render on smaller screens */
@@ -284,5 +289,9 @@ $grid-breakpoint-2: 400px;
 
   .col-sm-6{
     width: 100%;
+  }
+
+  .col-sm-hide{
+    display: none;
   }
 }
