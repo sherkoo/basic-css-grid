@@ -9,18 +9,20 @@
       font: 16px/1.5 arial, sans-serif;
       margin: 0;
     }
+
+    @media all and (max-width: 800px){
+      body{
+        font-size: 12px;
+      }
+    }
+
     .box{
       text-align: center;
       height: 96px;
-      display: table;
-      width: 100%;
+      line-height: 96px;
       background-color: #e6e6e6;
       border: 1px solid #cccccc;
-    }
-    .box span{
-      display: table-cell;
-      vertical-align: middle;
-    }
+    }/
   </style>
 </head>
 <body>
@@ -134,5 +136,20 @@
       </div> <!-- /.col-2 -->
     </div> <!-- /.row -->
   </div> <!-- /.container -->
+
+  <div class="container">
+    <div class="row row-no-gutter">
+      <div class="col-2 col-sm-6">
+        <div class="box"><span>.row-no-gutter</span></div> <!-- /.box -->
+      </div> <!-- /.col-2 -->
+      <div class="col-2 col-sm-6">
+        <div class="box"><span>.row-no-gutter</span></div> <!-- /.box -->
+      </div> <!-- /.col-2 -->
+      <div class="col-2 col-sm-6">
+        <div class="box"><span>.row-no-gutter</span></div> <!-- /.box -->
+      </div> <!-- /.col-2 -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+
 </body>
 </html>

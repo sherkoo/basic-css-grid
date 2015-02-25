@@ -59,6 +59,7 @@ $grid-breakpoint-2: 400px;
  * ---
  * 1. Allows row to clear
  * 2. Used inside of .container
+ * 3. Use .row-no-gutter in addition to .row to remove gutter from columns
  */
 
 .row{
@@ -73,6 +74,15 @@ $grid-breakpoint-2: 400px;
 
 .row:after{
   clear: both;
+}
+
+/* Remove gutter from columns in this row */
+.row-no-gutter{
+  padding: 0 $grid-col-gutter;
+}
+
+.row-no-gutter [class*='col-']{
+  padding: 0;
 }
 
 /**
