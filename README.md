@@ -1,14 +1,28 @@
 Basic Css Grid
 ============
 
-Instructions
+Example
 ---
 
 ```HTML
-<div class="col-100"></div>
-<div class="col-33"></div>
-<div class="col-33"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-6"></div>
+  </div>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-75"></div>
+    <div class="col-25"></div>
+  </div>
+</div>
 ```
+
+Instructions
+---
 
 Start div .col of choice, then enter content inside.
 
